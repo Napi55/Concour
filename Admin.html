@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/Admin.css" class="rel" />
+    <!-- Render All Elements Normaly -->
+    <link rel="stylesheet" href="css/normalize.css" class="rel" />
+    <!-- Font Awesome Library -->
+    <script
+      src="https://kit.fontawesome.com/d563012c9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Googl Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="header">
+      <div class="menu">
+        <i class="fas fa-solid fa-bars fa-2x"></i>
+      </div>
+      <div class="logo">
+        <i class="fas fa-graduation-cap fa-3x"></i>
+        <h2>ConcourDoc<span>2</span>UC2</h2>
+      </div>
+      <div class="profile">
+        <div class="image">
+          <i class="fas fa-user fa-2x"></i>
+        </div>
+        <div class="info">
+          <p class="first">admin name</p>
+
+          <p class="second">Admin</p>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+    <div class="main">
+      <!-- start aside bar -->
+      <div class="aside">
+        <ul class="sidebar-items">
+          <li>
+            <a href="#" class="administrator-link active-link">
+              <i class="fas fa-user"></i>
+              <span class="">Admins</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="employee-link">
+              <i class="fas fa-users" style="margin-right: 10px"></i>
+              <span class="">employees</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="condidat-link">
+              <i class="fas fa-user-graduate"></i>
+              <span class="">candidates</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="add-link add-button">
+              <i class="fas fa-plus"></i>
+              <span class="">Add Account</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="sidebar-bottom-itmes">
+          <li>
+            <a href="#" class="">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">log out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- end aside bar  -->
+      <!-- start main content -->
+      <div class="main-content">
+        <div class="list_users">
+          <div class="title">
+            <h2>List of <span class="list-title">Admins</span></h2>
+          </div>
+          <hr />
+          <!-- start table admin -->
+          <div class="table table-admin table-active">
+            <table>
+              <thead>
+                <tr>
+                  <th>FirstName</th>
+                  <th>LastName</th>
+                  <th>Email</th>
+                  <th>UserType</th>
+                  <th>Setting</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- start loop (to display users) "backend"-->
+                <tr>
+                  <td>Nabil</td>
+                  <td>bkz</td>
+                  <td>nabilbkz7@gmail.com</td>
+                  <td>Admin</td>
+                  <td>
+                    <span
+                      ><i class="fas fa-pen edit-button"></i>
+                      <!-- this link is used to delete an admin "backend" -->
+                      <a href="#"><i class="fas fa-trash delete-button"></i></a
+                    ></span>
+                  </td>
+                </tr>
+                <!-- end loop (to display users) "backend"-->
+              </tbody>
+            </table>
+          </div>
+          <!-- end table admin -->
+          <!-- start table employee -->
+          <div class="table table-employee">
+            <table>
+              <thead>
+                <tr>
+                  <th>FirstName</th>
+                  <th>LastName</th>
+                  <th>Email</th>
+                  <th>UserType</th>
+                  <th>Setting</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- start loop (to display users) "backend"-->
+                <tr>
+                  <td>wadye</td>
+                  <td>khb</td>
+                  <td>wadye@gmail.com</td>
+                  <td>Doyen</td>
+                  <td>
+                    <span
+                      ><i class="fas fa-pen edit-button"></i>
+                      <!-- this link is used to delete an employee "backend"-->
+                      <a href="#"><i class="fas fa-trash delete-button"></i></a>
+                    </span>
+                  </td>
+                </tr>
+                <!-- end loop (to display users) "backend" -->
+              </tbody>
+            </table>
+          </div>
+          <!-- end table employee  -->
+          <!-- start table condidat -->
+          <div class="table table-condidat">
+            <table>
+              <thead>
+                <tr>
+                  <th>FirstName</th>
+                  <th>LastName</th>
+                  <th>Email</th>
+                  <th>UserType</th>
+                  <th>Setting</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- start loop (to display users) "backend"-->
+
+                <tr>
+                  <td>zoubir</td>
+                  <td>mpz</td>
+                  <td>zoubir@gmail.com</td>
+                  <td>condidat</td>
+                  <td>
+                    <span
+                      ><i class="fas fa-pen edit-button"></i>
+                      <!-- this link is used to delete an candidate "backend" -->
+                      <a href="#"><i class="fas fa-trash delete-button"></i></a
+                    ></span>
+                  </td>
+                </tr>
+                <!-- end loop (to display users) "backend"-->
+              </tbody>
+            </table>
+          </div>
+          <!-- end table condidat -->
+        </div>
+      </div>
+      <!-- end main content -->
+    </div>
+    <!-- start add form  -->
+    <div class="add-form">
+      <div class="close">&times;</div>
+      <h2>Add</h2>
+      <form action="#" method="get">
+        <div class="input">
+          <label for="firstName">FirstName</label>
+
+          <input
+            type="text"
+            name="FirstName"
+            placeholder="Enter FirstName"
+            id="firstName"
+            required
+          />
+        </div>
+        <div class="input">
+          <label for="lastName">LastName</label>
+          <input
+            type="text"
+            name="LastName"
+            placeholder="Enter LastName"
+            id="lastName"
+            required
+          />
+        </div>
+        <div class="input">
+          <label for="userType">UserType</label>
+          <select name="UserType" id="userType" required>
+            <option value="Admin">Admin</option>
+            <option value="Doyen">Dean</option>
+            <option value="Doyen">Teacher</option>
+            <option value="Doyen">CFDPresident</option>
+            <option value="Doyen">Candidate</option>
+          </select>
+        </div>
+        <div class="input">
+          <label for="Email">Email</label>
+          <input type="email" name="Email" placeholder="Enter Email" required />
+        </div>
+        <div class="input">
+          <label for="Password">Password</label>
+          <input
+            type="password"
+            name="Password"
+            placeholder="Enter Password"
+            required
+          />
+        </div>
+        <div class="input">
+          <!-- this button(input) is used to add a new user use attribute of form (action="") to pass link "backend"-->
+          <input type="submit" value="Add" />
+        </div>
+      </form>
+    </div>
+    <!-- end  add form  -->
+
+    <!-- start edit form  -->
+    <div class="add-form edit-form">
+      <div class="close-edit">&times;</div>
+      <h2>Edit</h2>
+      <form action="#" method="get">
+        <div class="input">
+          <label for="FirstName">FirstName</label>
+
+          <input
+            type="text"
+            name="FirstName"
+            value="nabil"
+            id="FirstName"
+            required
+          />
+        </div>
+        <div class="input">
+          <label for="LastName">LastName</label>
+          <input
+            type="text"
+            name="LastName"
+            value="bkz"
+            id="LastName"
+            required
+          />
+        </div>
+        <div class="input">
+          <label for="UserType">UserType</label>
+          <input
+            type="text"
+            name="UserType"
+            disabled
+            value="Admin"
+            id="UserType"
+            required
+            readonly
+          />
+        </div>
+        <div class="input">
+          <label for="Email">Email</label>
+          <input
+            type="email"
+            name="Email"
+            value="nabilbkz7@gmail.com"
+            disabled
+            required
+          />
+        </div>
+
+        <div class="input">
+          <!-- this button(input) is used to update infor use attribute of form (action="") to pass link "backend"-->
+
+          <input type="submit" value="Edit" />
+        </div>
+      </form>
+    </div>
+    <!-- end  edit form  -->
+
+    <script src="Admin.js"></script>
+  </body>
+</html>
