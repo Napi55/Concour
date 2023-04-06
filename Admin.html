@@ -49,6 +49,18 @@
       <div class="aside">
         <ul class="sidebar-items">
           <li>
+            <div class="profile profile2">
+              <div class="image">
+                <i class="fas fa-user fa-2x"></i>
+              </div>
+              <div class="info">
+                <p class="first">admin name</p>
+
+                <p class="second">Admin</p>
+              </div>
+            </div>
+          </li>
+          <li>
             <a href="#" class="administrator-link active-link">
               <i class="fas fa-user"></i>
               <span class="">Admins</span>
@@ -98,7 +110,7 @@
                   <th>FirstName</th>
                   <th>LastName</th>
                   <th>Email</th>
-                  <th>UserType</th>
+                  <th>Type</th>
                   <th>Setting</th>
                 </tr>
               </thead>
@@ -130,7 +142,7 @@
                   <th>FirstName</th>
                   <th>LastName</th>
                   <th>Email</th>
-                  <th>UserType</th>
+                  <th>Type</th>
                   <th>Setting</th>
                 </tr>
               </thead>
@@ -162,7 +174,7 @@
                   <th>FirstName</th>
                   <th>LastName</th>
                   <th>Email</th>
-                  <th>UserType</th>
+                  <th>Type</th>
                   <th>Setting</th>
                 </tr>
               </thead>
@@ -218,7 +230,7 @@
           />
         </div>
         <div class="input">
-          <label for="userType">UserType</label>
+          <label for="userType">Type</label>
           <select name="UserType" id="userType" required>
             <option value="Admin">Admin</option>
             <option value="Doyen">Dean</option>
@@ -275,7 +287,7 @@
           />
         </div>
         <div class="input">
-          <label for="UserType">UserType</label>
+          <label for="UserType">Type</label>
           <input
             type="text"
             name="UserType"
@@ -300,7 +312,7 @@
         <div class="input">
           <!-- this button(input) is used to update infor use attribute of form (action="") to pass link "backend"-->
 
-          <input type="submit" value="Edit" />
+          <input type="submit" value="Save" />
         </div>
       </form>
     </div>
